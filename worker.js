@@ -1,4 +1,4 @@
-Hu const DEFAULT_DATA = {
+const DEFAULT_DATA = {
   businessName: "Dushi Autos",
   tagline: "Car Repair & Diagnostics",
   phone: "",
