@@ -215,13 +215,13 @@ export default {
         return json({error:"Incorrect password."},401);
       const token = await makeSession(env.ADMIN_PASSWORD);
       return json({ok:true},200 ,{headers:{
-        "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/admin; HttpOnly; Secure; SameSite=Strict`
+        "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/; HttpOnly; Secure; SameSite=Strict`
       }});
     }
 
     if (url.pathname === "/api/logout" && method === "POST") {
       return new Response(JSON.stringify({ok:true}), {
-        headers: {"content-type":"application/json","Set-Cookie":`${COOKIE}=; Max-Age=0; Path=/admin; HttpOnly; Secure; SameSite=Strict`}
+        headers: {"content-type":"application/json","Set-Cookie":`${COOKIE}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Strict`}
       });
     }
 
