@@ -215,7 +215,7 @@ export default {
         return json({error:"Incorrect password."},401);
       const token = await makeSession(env.ADMIN_PASSWORD);
       return json({ok:true},200 ,{headers:{
-        "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/; HttpOnly; Secure; SameSite=Strict`
+        "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/ HttpOnly; Secure; SameSite=Strict`
       }});
     }
 
