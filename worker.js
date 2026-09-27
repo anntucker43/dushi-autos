@@ -1,4 +1,4 @@
-const DEFAULT_DATA = {
+Hu const DEFAULT_DATA = {
   businessName: "Dushi Autos",
   tagline: "Car Repair & Diagnostics",
   phone: "",
@@ -214,7 +214,7 @@ export default {
       if (!body.password || body.password !== env.ADMIN_PASSWORD)
         return json({error:"Incorrect password."},401);
       const token = await makeSession(env.ADMIN_PASSWORD);
-      return json({ok:true},{headers:{
+      return json({ok:true},200 ,{headers:{
         "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/admin; HttpOnly; Secure; SameSite=Strict`
       }});
     }
