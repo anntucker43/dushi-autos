@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "purple-meadow-9da7",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-27",
+  "kv_namespaces": [
+    {
+      "binding": "DUSHI_DATA",
+      "id": "8943c8b296114a559355d43be624b7c4"
+    }
+  ]
+}
