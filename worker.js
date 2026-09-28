@@ -189,7 +189,7 @@ section{max-width:1100px;margin:auto;padding:70px 20px}h2{font-size:36px;margin:
 footer{padding:30px 20px;text-align:center;color:#7f8791;font-size:13px}
 @media(max-width:700px){nav{display:none}.grid,.contactgrid{grid-template-columns:1fr}.hero{padding-top:65px}}
 </style></head><body>
-<header class="nav"><div class="navin"><a class="logo" href="/"><img src=" https://raw.githubusercontent.com/anntucker43/dushi-autos/main/3E29DAAE-5FED-4936-B151-AA9F2041E9F0.png
+<header class="nav"><div class="navin"><a class="logo" href="/"><img src="https://raw.githubusercontent.com/anntucker43/dushi-autos/main/3E29DAAE-5FED-4936-B151-AA9F2041E9F0.png" alt="Dushi Autos"></a><nav><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav></div></header>
 <main>
 <section class="hero"><div class="heroIn"><div class="badge">Professional vehicle care</div>
 <h1>${esc(data.businessName)}</h1><p>${esc(data.tagline)}</p>
