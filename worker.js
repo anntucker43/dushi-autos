@@ -214,9 +214,9 @@ export default {
       if (!body.password || body.password !== env.ADMIN_PASSWORD)
         return json({error:"Incorrect password."},401);
       const token = await makeSession(env.ADMIN_PASSWORD);
-      return json({ok:true},200 ,{headers:{
+      return json({ok:true},200 ,{
         "Set-Cookie": `${COOKIE}=${encodeURIComponent(token)}; Max-Age=86400; Path=/; HttpOnly; Secure; SameSite=Strict`
-      }});
+      });
     }
 
     if (url.pathname === "/api/logout" && method === "POST") {
