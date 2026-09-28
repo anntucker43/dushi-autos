@@ -163,7 +163,7 @@ load();
 
 function sitePage(data) {
   const phone = data.phone || "";
-  const phoneHref = phone ? `tel:${phone.replace(/[^+\\d]/g,"")}` : "#contact";
+    const phoneHref = phone ? `tel:${phone.startsWith("0") ? "+44" + phone.slice(1) : phone.replace(/[^\d+]/g,"")}` : "#contact";
   const wa = data.whatsapp ? data.whatsapp.replace(/\\D/g,"") : "";
   const waHref = wa ? `https://wa.me/${wa}` : "#contact";
   const services = (data.services || []).map(s => `
