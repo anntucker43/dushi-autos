@@ -175,7 +175,7 @@ function sitePage(data) {
   return `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(data.businessName)} | ${esc(data.tagline)}</title>
-<meta name="description" content="${esc(data.businessName)} - ${esc(data.tagline)}">
+<meta name="description" content="${esc(data.businessName)} - ${esc(data.tagline)}"><link rel="icon" href="https://raw.githubusercontent.com/anntucker43/dushi-autos/main/3E29DAAE-5FED-4936-B151-AA9F2041E9F0.png">
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f7f7f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 a{text-decoration:none;color:inherit}.nav{position:relative;z-index:5;background:rgba(9,11,14,.92);backdrop-filter:blur(10px);border-bottom:1px solid #22262c}
