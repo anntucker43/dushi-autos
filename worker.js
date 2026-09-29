@@ -178,7 +178,7 @@ function sitePage(data) {
 <meta name="description" content="${esc(data.businessName)} - ${esc(data.tagline)}">
 <style>
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#090b0e;color:#f7f7f7;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:5;background:rgba(9,11,14,.92);backdrop-filter:blur(10px);border-bottom:1px solid #22262c}
+a{text-decoration:none;color:inherit}.nav{position:relative;z-index:5;background:rgba(9,11,14,.92);backdrop-filter:blur(10px);border-bottom:1px solid #22262c}
 .navin{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:center}.logo{font-size:22px;font-weight:900;letter-spacing:.5px}.logo img{width:200px;max-width:100%;height:auto;display:block;margin:auto}.logo span{color:#e31b23}
 nav{display:flex;gap:22px;font-size:14px;color:#c7cbd0}nav a:hover{color:#fff}
 .hero{background:radial-gradient(circle at 80% 20%,#3a1014 0,#130b0d 30%,#090b0e 65%);padding:90px 20px 80px;border-bottom:1px solid #222}
